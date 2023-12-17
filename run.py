@@ -11,7 +11,8 @@ app = Flask(__name__)
 
 class TextFunction:
     def __init__(self):
-        genai.configure(api_key='AIzaSyAVZxHJmx9cJRVHw26hrl0nzgl8pi4_Mlc')
+        GOOGLE_API_KEY=userdata.get('GOOGLE_API_KEY')
+        #genai.configure(api_key='AIzaSyAVZxHJmx9cJRVHw26hrl0nzgl8pi4_Mlc')
         self.model = genai.GenerativeModel('gemini-pro')
         self.messages = []
 
