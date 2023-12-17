@@ -1,5 +1,4 @@
 flask
 pathlib
-textwrap
 google-generativeai
 ipython
